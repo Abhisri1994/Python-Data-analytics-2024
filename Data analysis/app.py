@@ -1,4 +1,4 @@
-# c;eaclea
+# streamlit run app.py
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -9,7 +9,7 @@ years = list(map(str, range(1980, 2014)))
 
 @st.cache_data
 def load_data():
-    df = pd.read_excel("Canada.xlsx", sheet_name=1, skiprows=20, skipfooter=2)
+    df = pd.read_excel("E:\Python Data analytics 2024\Data analysis\Canada.xlsx", sheet_name=1, skiprows=20, skipfooter=2)
     cols_to_rename ={
     'OdName': 'Country',
     'AreaName': 'Continent',
